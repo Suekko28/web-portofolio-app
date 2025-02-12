@@ -2,7 +2,7 @@ import React from "react";
 
 function PortoNavbar() {
   return (
-    <nav class="bg-blue-light border-gray-200 dark:bg-gray-900">
+    <nav class="bg-blue-light border-gray-200 dark:bg-gray-900 fixed w-full z-1">
       <div class="max-w-screen-xl mx-[120px] h-[92px] flex flex-wrap items-center justify-between p-4">
         <a
           href="https://flowbite.com/"

@@ -4,7 +4,8 @@
 :root {
   --color-blue-dark: #006fa6;
   --color-blue-light: #eff9ff;
-  --color-blue-default: #dff3ff;
+  --color-blue-default: #DFF3FF;
+  --color-blue-divider: #B9E8FE;
 
   --color-orange-light: #ff9e33;
   --color-red-light: #ff335b;
@@ -15,9 +16,14 @@
 @theme {
   --color-blue-dark: #006fa6; /* Bisa didefinisikan di sini juga */
   --color-blue-light: #eff9ff; /* Bisa didefinisikan di sini juga */
-  --color-blue-default: #dff3ff; /* Bisa didefinisikan di sini juga */
+  --color-blue-default: #DFF3FF; /* Bisa didefinisikan di sini juga */
+  --color-blue-divider: #B9E8FE; /* Bisa didefinisikan di sini juga */
 }
 
 body {
   font-family: var(--font-primary);
+}
+
+hr {
+  color: #B9E8FE;
 }
