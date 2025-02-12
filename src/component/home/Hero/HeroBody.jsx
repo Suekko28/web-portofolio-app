@@ -1,8 +1,10 @@
 import React from "react";
 import HeroButton from "./HeroButton";
+import HeroSkills from "./HeroSkills";
 
 function HeroBody() {
   return (
+    <div className="HeroBody">
       <div className="flex mx-[120px] justify-center items-center">
         <div className="description w-full ">
           <div className="w-xl">
@@ -25,9 +27,15 @@ function HeroBody() {
           </div>
         </div>
         <div className="profile w-full">
-        <img src="/src/assets/images/profile-svg.svg" alt="Profile" className="ml-auto relative top-[-20px]" />
+          <img
+            src="/src/assets/images/profile-svg.svg"
+            alt="Profile"
+            className="ml-auto relative top-[-20px]"
+          />
         </div>
       </div>
+      <HeroSkills />
+    </div>
   );
 }
 

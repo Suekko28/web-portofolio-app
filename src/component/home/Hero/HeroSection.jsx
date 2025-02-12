@@ -3,12 +3,13 @@ import HeroBody from "./HeroBody";
 import HeroSkills from "./HeroSkills";
 
 function HeroSection() {
-  return(
-    <div className="w-auto bg-blue-light h-[579px] pt-32">
+  return (
+    <div className="HeroSection">
+      <div className="w-auto bg-blue-light h-[579px] pt-32">
         <HeroBody />
-        <HeroSkills/>
+      </div>
     </div>
-  ); 
+  );
 }
 
 export default HeroSection;
