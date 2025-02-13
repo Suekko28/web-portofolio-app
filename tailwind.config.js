@@ -1,10 +1,12 @@
-module.exports = {
-    theme: {
-      extend: {
-        colors: {
-          primary: "var( --color-blue-dark)",
-          secondary: "var --color-blue-light)"
-        },
+import defaultTheme from "tailwindcss/defaultTheme";
+
+export default {
+  theme: {
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
     },
-  };
+  },
+  plugins: [],
+};

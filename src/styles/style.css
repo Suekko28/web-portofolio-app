@@ -1,11 +1,11 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --color-blue-dark: #006fa6;
   --color-blue-light: #eff9ff;
-  --color-blue-default: #DFF3FF;
-  --color-blue-divider: #B9E8FE;
+  --color-blue-default: #dff3ff;
+  --color-blue-divider: #b9e8fe;
+  --color-blue-hover: #07314a;
 
   --color-orange-light: #ff9e33;
   --color-red-light: #ff335b;
@@ -16,8 +16,9 @@
 @theme {
   --color-blue-dark: #006fa6; /* Bisa didefinisikan di sini juga */
   --color-blue-light: #eff9ff; /* Bisa didefinisikan di sini juga */
-  --color-blue-default: #DFF3FF; /* Bisa didefinisikan di sini juga */
-  --color-blue-divider: #B9E8FE; /* Bisa didefinisikan di sini juga */
+  --color-blue-default: #dff3ff; /* Bisa didefinisikan di sini juga */
+  --color-blue-divider: #b9e8fe; /* Bisa didefinisikan di sini juga */
+  --color-blue-hover: #07314a; /* Bisa didefinisikan di sini juga */
 }
 
 body {
@@ -25,5 +26,27 @@ body {
 }
 
 hr {
-  color: #B9E8FE;
+  color: #b9e8fe;
+}
+
+/* Hero Section */
+
+@media only screen and (max-width: 640px) {
+  .custome_content_flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .custome_content_width {
+    width: 300px;
+  }
+  .custome_content_name {
+    font-size: 36px;
+  }
+
+  .custome_skills_width{
+    width: 360px;
+    padding: 24px 24px;
+    height: auto;
+
+  }
 }

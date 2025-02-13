@@ -18,8 +18,8 @@ const LogoRow = ({ logos }) => {
   return (
     <div className="flex justify-center items-center space-x-12">
       {logos.map((src, index) => (
-        <div key={index} className="html">
-          <img src={src} alt={`Logo ${index + 1}`} />
+        <div key={index} className="logo">
+          <img src={src} alt={`Logo ${index + 1}`} className="imageLogo" />
         </div>
       ))}
     </div>
@@ -29,7 +29,7 @@ const LogoRow = ({ logos }) => {
 function HeroSkills() {
   return (
     <div className="heroSkills">
-      <div className="absolute w-[736px] h-[196px] bg-blue-default left-1/2 -translate-x-1/2 px-[120px] py-[24px] rounded-xl">
+      <div className="absolute w-[500px] h-[196px] md:w-[736px] md:h-[196px] bg-blue-default left-1/2 -translate-x-1/2 mt-3 px-[32px] py-[24px] md:px-[120px] md:py-[24px] rounded-xl custome_skills_width">
         <div className="space-y-6">
           <LogoRow logos={imageLogos.slice(0, 5)} />
           <LogoRow logos={imageLogos.slice(5, 10)} />

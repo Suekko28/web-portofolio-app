@@ -5,19 +5,19 @@ import HeroSkills from "./HeroSkills";
 function HeroBody() {
   return (
     <div className="HeroBody">
-      <div className="flex mx-[120px] justify-center items-center">
-        <div className="description w-full ">
-          <div className="w-xl">
-            <h1 className="text-blue-dark text-normal text-[32px]">
+      <div className="flex mx-[32px] justify-center items-center lg:flex-nowrap sm:flex-wrap xl:mx-[120px] custome_content_flex">
+        <div className="description w-full">
+          <div className="custome_content_width w-lg mx-auto text-center lg:w-xl lg:text-left lg:mx-0">
+            <h1 className="text-blue-dark font-normal text-[32px]">
               Hello, i'm
             </h1>
-            <h1 className="text-black text-[64px] text-semibold">
+            <h1 className="text-[64px] font-semibold custome_content_name">
               Aldi Dharmawan
             </h1>
             <div className="space-y-3">
-              <p className="text-extralight text-base">Tech Enthusiast</p>
-              <hr className="w-1/2 h-1 bg-blue-divider rounded" />
-              <p className="text-light">
+              <p className="font-light">Tech Enthusiast</p>
+              <hr className="w-full xl:w-1/2 h-1 bg-blue-divider rounded" />
+              <p className="font-light">
                 Informatics Engineering graduate from Gunadarma University with
                 a background in Computer and Network Engineering. Skilled in Web
                 Development, IT Support, and UI/UX design
@@ -30,7 +30,7 @@ function HeroBody() {
           <img
             src="/src/assets/images/profile-svg.svg"
             alt="Profile"
-            className="ml-auto relative top-[-20px]"
+            className="mx-auto mt-12 lg:mx-0 lg:ml-auto lg:mt-0 relative top-[-20px]"
           />
         </div>
       </div>

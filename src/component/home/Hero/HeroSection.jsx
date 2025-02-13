@@ -4,8 +4,8 @@ import HeroSkills from "./HeroSkills";
 
 function HeroSection() {
   return (
-    <div className="HeroSection">
-      <div className="w-auto bg-blue-light h-[579px] pt-32">
+<div className="HeroSection">
+      <div className="w-full bg-blue-light h-[900px] lg:h-[579px] pt-32">
         <HeroBody />
       </div>
     </div>
