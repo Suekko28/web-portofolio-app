@@ -4,14 +4,14 @@ import HeroSkills from "./HeroSkills";
 
 function HeroBody() {
   return (
-    <div className="HeroBody">
+    <div className="hero-body">
       <div className="flex mx-[32px] justify-center items-center lg:flex-nowrap sm:flex-wrap xl:mx-[120px] custome_content_flex">
         <div className="description w-full">
           <div className="custome_content_width w-lg mx-auto text-center lg:w-xl lg:text-left lg:mx-0">
             <h1 className="text-blue-dark font-normal text-[32px]">
               Hello, i'm
             </h1>
-            <h1 className="text-[64px] font-semibold custome_content_name">
+            <h1 className="text-[64px] font-bold custome_content_name">
               Aldi Dharmawan
             </h1>
             <div className="space-y-3">
