@@ -7,8 +7,9 @@
   --color-blue-divider: #b9e8fe;
   --color-blue-hover: #07314a;
 
-  --color-orange-light: #ff9e33;
-  --color-red-light: #ff335b;
+  --color-orange-card: #ff9e33;
+  --color-red-card: #ff335b;
+  --color-blue-card: #32c3fe;
 
   --font-primary: "Poppins", sans-serif;
 }
@@ -19,6 +20,9 @@
   --color-blue-default: #dff3ff; /* Bisa didefinisikan di sini juga */
   --color-blue-divider: #b9e8fe; /* Bisa didefinisikan di sini juga */
   --color-blue-hover: #07314a; /* Bisa didefinisikan di sini juga */
+  --color-orange-card: #ff9e33;
+  --color-red-card: #ff335b;
+  --color-blue-card: #32c3fe;
 }
 
 body {
@@ -43,10 +47,14 @@ hr {
     font-size: 36px;
   }
 
-  .custome_skills_width{
+  .custome_skills_width {
     width: 360px;
     padding: 24px 24px;
     height: auto;
-
   }
+}
+
+/* Experience Section  */
+
+@media only screen and (max-width: 640px) {
 }

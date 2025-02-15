@@ -1,8 +1,8 @@
 import React from "react";
-import { getContentExperience } from "../utils/data"
 import ExperienceList from "./home/Experience/ExperienceList";
 import HeroSection from "./home/Hero/HeroSection";
 import PortoNavbar from "./home/Navbar/PortoNavbar";
+import ProjectList from "./home/Project/ProjectList";
 
 class PortoApp extends React.Component {
 
@@ -10,9 +10,10 @@ class PortoApp extends React.Component {
     return (
       <div>
         <PortoNavbar />
-        <div className="h-dvw">
+        <div className="h-full">
         <HeroSection /> 
         <ExperienceList />
+        <ProjectList />
         </div>
       </div>
     );
