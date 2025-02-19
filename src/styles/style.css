@@ -6,14 +6,15 @@
   --color-blue-default: #dff3ff;
   --color-blue-divider: #b9e8fe;
   --color-blue-hover: #07314a;
+  --color-blue-footer: #06304b;
 
   --color-orange-card: #ff9e33;
   --color-red-card: #ff335b;
   --color-blue-card: #32c3fe;
 
-  --color-blue-linkedin : #A3D1FF;
-  --color-black-github : #ADBCC5;
-  --color-purple-instagram : #CDC3F0;
+  --color-blue-linkedin: #a3d1ff;
+  --color-black-github: #adbcc5;
+  --color-purple-instagram: #cdc3f0;
 
   --font-primary: "Poppins", sans-serif;
 }
@@ -27,12 +28,11 @@
   --color-orange-card: #ff9e33;
   --color-red-card: #ff335b;
   --color-blue-card: #32c3fe;
-  --color-blue-linkedin : #A3D1FF;
-  --color-black-github : #ADBCC5;
-  --color-purple-instagram : #CDC3F0;
-
+  --color-blue-linkedin: #a3d1ff;
+  --color-black-github: #adbcc5;
+  --color-purple-instagram: #cdc3f0;
+  --color-blue-footer: #06304b;
 }
-
 
 body {
   font-family: var(--font-primary);
@@ -63,11 +63,25 @@ hr {
   }
 }
 
-/* Experience Section  */
+/* Find Me Section  */
 
 @media only screen and (max-width: 640px) {
-
-  .custome_margin {
-    margin-top: 16px;
+  .button {
+    width: 250px;
   }
+
+  .image_find_ {
+    width: 50%;
+    height: auto;
+  }
+
+  .custome_body {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 550px) {
+ .custome_link {
+  width: 100%;
+ }
 }
