@@ -2,46 +2,44 @@ import React from "react";
 
 function PortoNavbar() {
   return (
-    <nav class="bg-blue-light border-gray-200 dark:bg-gray-900 fixed w-full z-1">
-      <div class="max-w-screen md:mx-[120px] mx-[32px] h-[92px] flex flex-wrap items-center justify-between">
+    <nav className="bg-blue-light border-gray-200 dark:bg-gray-900 fixed w-full z-1">
+      <div className="max-w-screen md:mx-[120px] mx-[32px] h-[92px] flex flex-wrap items-center justify-between">
         <a
           href="https://flowbite.com/"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <span class="self-center font-semibold text-blue-dark whitespace-nowrap dark:text-white">
+          <span className="self-center font-semibold text-blue-dark whitespace-nowrap dark:text-white">
             Suekko
           </span>
         </a>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-dark dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-dark dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
-          <span class="sr-only">Open main menu</span>
+          <span className="sr-only">Open main menu</span>
           <svg
-            class="w-5 h-5"
+            className="w-5 h-5"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 17 14"
           >
             <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="font-semibold flex flex-col p-4 md:p-0 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse ">
+        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul className="font-semibold flex flex-col p-4 md:p-0 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse ">
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-dark md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-dark dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-dark md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-dark dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 About Me
               </a>
@@ -49,7 +47,7 @@ function PortoNavbar() {
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-dark md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-dark dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-dark md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-dark dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Experiences
               </a>
@@ -57,7 +55,7 @@ function PortoNavbar() {
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-dark md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-dark dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-dark md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-dark dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Project
               </a>
@@ -65,7 +63,7 @@ function PortoNavbar() {
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-dark md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-dark dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-dark md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-dark dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Contact
               </a>

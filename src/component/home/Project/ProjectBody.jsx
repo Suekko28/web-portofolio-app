@@ -1,5 +1,7 @@
 import React from "react";
 
+
+// Mengambil nama image dari DataHome
 const getImageName = (imageURL) =>
   imageURL
     .split("/")
@@ -8,10 +10,11 @@ const getImageName = (imageURL) =>
 
 function ProjectBody({ imageURL, title, description, bgColor }) {
   return (
+    // Membuat parameter props berdasarkan DataHome 
     <div className="project-body w-full">
       <a href="">
         <div
-          className={`card h-auto mb-6 lg:mb-0 rounded-3xl p-4 text-white transition duration-300 ease-in-out transform shadow-lg hover:shadow-blue-card/50 bg-blue-card
+          className={`card h-auto mb-6 lg:mb-0 rounded-3xl p-4 text-white transition duration-300 ease-in-out transform hover:scale-109 hover:shadow-blue-card/50
           ${
             bgColor === "--color-orange-card"
             ? "hover:shadow-lg hover:shadow-orange-card/50"

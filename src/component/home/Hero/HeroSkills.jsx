@@ -14,6 +14,7 @@ const imageLogos = [
   "/src/assets/images/logo-react.png",
 ];
 
+//Mengambil data gambar 
 const LogoRow = ({ logos }) => {
   return (
     <div className="flex justify-center items-center space-x-12">

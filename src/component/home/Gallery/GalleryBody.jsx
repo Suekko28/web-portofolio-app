@@ -1,5 +1,6 @@
 import React from "react";
 
+// Daftar gambar gallery 
 const imageGallery = [
   "/src/assets/images/dimsum.png",
   "/src/assets/images/outfitguideidn.png",
@@ -12,12 +13,14 @@ const imageGallery = [
   "/src/assets/images/ems.png",
 ];
 
+// Mengambil nama image dari DataHome
 const getImageName = (imageURL) =>
   imageURL.split("/").pop().replace(/\.[^/.]+$/, "");
 
 function GalleryBody({ imageURL }) {
   return (
-    <div className="gallery-image mx-auto ">
+    // Membuat parameter props imageURL 
+    <div className="gallery-image mx-auto w-fit">
       <img src={imageURL} alt={`Foto ${getImageName(imageURL)}`} className="w-[250px] h-[250px]" />
     </div>
   );

@@ -80,8 +80,11 @@ hr {
     justify-content: center;
   }
 }
-@media only screen and (max-width: 550px) {
+
+
+@media only screen and (max-width: 640px) {
  .custome_link {
   width: 100%;
  }
 }
+

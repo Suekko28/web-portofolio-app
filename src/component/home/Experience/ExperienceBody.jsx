@@ -1,14 +1,15 @@
 import React from "react";
 
+// Mengambil nama image dari file
 const getImageName = (imageURL) =>
   imageURL
     .split("/")
     .pop()
     .replace(/\.[^/.]+$/, "");
 
-    
 function ExperienceBody({ title, imageURL, date, description }) {
   return (
+    // Membuat props berdasarkan DataHome
     <div className="experience-body w-full min-h-[418px] mb-6 lg:mb-0">
       <div className="experience-image h-[201px] flex justify-center items-center">
         <img src={imageURL} alt={`Foto ${getImageName(imageURL)}`} />

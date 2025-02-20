@@ -4,6 +4,7 @@ import ExperienceBody from "./ExperienceBody";
 
 function ExperienceItem() {
   return (
+    // Mengambil data props dari experience body  
     <div className="experience-item">
       <div className="flex flex-wrap lg:flex-nowrap justify-center items-center lg:space-x-[32px]">
         {getContentExperience().map((experience) => (
