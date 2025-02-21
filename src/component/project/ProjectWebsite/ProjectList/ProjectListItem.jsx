@@ -1,5 +1,5 @@
 import React from "react";
-import { getDataProject } from "../../../utils/DataProject";
+import { getDataProject } from "../../../../utils/DataProject";
 import ProjectListBody from "./ProjectListBody";
 
 function ProjectListItem() {

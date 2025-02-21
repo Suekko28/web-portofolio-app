@@ -4,7 +4,7 @@ import GalleryItem from "./GalleryItem";
 function GalleryList () {
 
     return (
-        <div className="gallery-list">
+        <div className="gallery-list" id="gallery">
         <div className="mt-32 md:mt-32 mx-[32px] xl:mx-[120px] custome_margin">
           <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark">
             Gallery

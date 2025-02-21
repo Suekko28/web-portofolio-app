@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 // Mengambil nama image dari DataHome
@@ -12,7 +13,8 @@ function ProjectBody({ imageURL, title, description, bgColor }) {
   return (
     // Membuat parameter props berdasarkan DataHome 
     <div className="project-body w-full">
-      <a href="">
+      <Link to="/website-list">
+      <a href="#">
         <div
           className={`card h-auto mb-6 lg:mb-0 rounded-3xl p-4 text-white transition duration-300 ease-in-out transform hover:scale-109 hover:shadow-blue-card/50
           ${
@@ -41,6 +43,7 @@ function ProjectBody({ imageURL, title, description, bgColor }) {
           </div>
         </div>
       </a>
+      </Link>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem";
 
 function ProjectList() {
   return (
-    <div className="project-list">
+    <div className="project-list" id="project">
       <div className="mt-32 md:mt-32 mx-[32px] xl:mx-[120px] custome_margin">
         <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark">
           Project
