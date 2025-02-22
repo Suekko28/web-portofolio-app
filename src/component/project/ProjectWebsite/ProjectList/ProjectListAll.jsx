@@ -4,7 +4,7 @@ import ProjectListItem from "./ProjectListItem";
 function ProjectListAll() {
   return (
     <div className="project-list">
-      <div className="mx-[32px] xl:mx-[120px]">
+      <div className="mx-[32px] xl:mx-[120px] pt-32">
       <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark">
           Website
         </h2>

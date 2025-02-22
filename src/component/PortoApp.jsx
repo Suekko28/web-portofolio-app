@@ -7,6 +7,7 @@ import GalleryList from "./home/Gallery/GalleryList";
 import HeroSection from "./home/Hero/HeroSection";
 import PortoNavbar from "./home/Navbar/PortoNavbar";
 import ProjectList from "./home/Project/ProjectList";
+import ProjectDetailHero from "./project/ProjectWebsite/ProjectDetail/JejakKebahagiaan/ProjectDetailHero";
 import ProjectListAll from "./project/ProjectWebsite/ProjectList/ProjectListAll";
 
 class PortoApp extends React.Component {
@@ -24,6 +25,7 @@ class PortoApp extends React.Component {
               <GalleryList />
               <FindMeSection />
               <FooterSection />
+              <ProjectDetailHero />
             </>
           } />
 
