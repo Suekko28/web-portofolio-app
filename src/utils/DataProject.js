@@ -8,6 +8,7 @@ const getDataProject = () => [
       "The Jejakkebahagiaan Website is a digital platform offering various wedding services, including digital invitations, photo printing, creative photo designs, and gift presentations (seserahan). It also features a blog to share tips, ideas, and inspiration for couples planning their special day.",
     link_website: "https://jejakkebahagiaan.com/",
     link_github: "https://github.com/Suekko28/web-portofolio-app",
+    video : "/src/assets/video/jejakkebahagiaan-preview.mp4"
   },
   {
     id: 2,

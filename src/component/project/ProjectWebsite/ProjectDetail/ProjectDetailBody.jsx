@@ -11,11 +11,12 @@ function ProjectDetailBody() {
           Preview
         </h2>
         <hr className="h-2 bg-blue-divider rounded w-[64px] mb-[32px] mx-auto" />
-        <iframe src="" frameborder="0"></iframe>
-        <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark">
-          Home
-        </h2>
-        <hr className="h-2 bg-blue-divider rounded w-[64px] mb-[32px] mx-auto" />
+        <div className="video mb-32">
+          <iframe
+            src="/src/assets/video/jejakkebahagiaan-preview.mp4"
+            frameborder="0" className="w-full mx-auto h-screen rounded-3xl"
+          ></iframe>
+        </div>
         <Carousel className="rounded-3xl">
           <img
             src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
