@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Mengambil nama image dari DataProject
 const getImageName = (imageURL) =>
@@ -7,7 +8,7 @@ const getImageName = (imageURL) =>
     .pop()
     .replace(/\.[^/.]+$/, "");
 
-function ProjectListBody({ image, title, date, description }) {
+function ProjectListBody({ id, image, title, date, description }) {
   return (
     <div className="project-list-body ">
       <div className="rounded-3xl p-[32px] hover:bg-blue-light transition-all duration-300 ease-in-out group ">
@@ -18,8 +19,13 @@ function ProjectListBody({ image, title, date, description }) {
           <div className="content-project w-full space-y-[12px]">
             <h1 className="title font-bold text-blue-dark text-xl">{title}</h1>
             <h1 className="date text-xs font-light">{date}</h1>
-            <p className="text-sm font-normal md:h-[190px] sm:h-24 ">{description}</p>
-            <a href="" className="text-base p-[10px] border rounded-lg group-hover:bg-blue-dark group-hover:text-white transition-all duration-300 ease-in-out">View Detail</a>
+            <p className="text-sm font-normal md:h-[190px] sm:h-24 ">{description}</p>            
+            <Link
+              to={`/website-list/${id}`}
+              className="text-base p-[10px] border rounded-lg group-hover:bg-blue-dark group-hover:text-white transition-all duration-300 ease-in-out"
+            >
+              View Detail
+            </Link>
           </div>
         </div>
       </div>

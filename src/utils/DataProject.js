@@ -1,7 +1,16 @@
 const getDataProject = () => [
   {
     id: 1,
-    image: "/src/assets/images/jejakkebahagiaan.png",
+    image: [
+      "/src/assets/images/jejakkebahagiaan-1.png",
+      "/src/assets/images/jejakkebahagiaan-2.png",
+      "/src/assets/images/jejakkebahagiaan-3.png",
+      "/src/assets/images/jejakkebahagiaan-4.png",
+      "/src/assets/images/jejakkebahagiaan-5.png",
+      "/src/assets/images/jejakkebahagiaan-6.png",
+      "/src/assets/images/jejakkebahagiaan-7.png",
+      "/src/assets/images/jejakkebahagiaan-8.png",
+    ],
     title: "JejakKebahagiaan",
     date: "Sept 2024 - Oct 2024",
     description:
