@@ -21,7 +21,7 @@ function ProjectListBody({ id, image, title, date, description }) {
             <h1 className="date text-xs font-light">{date}</h1>
             <p className="text-sm font-normal md:h-[190px] sm:h-24 ">{description}</p>            
             <Link
-              to={`/website-list/${id}`}
+              to={`/website-list/${title}`}
               className="text-base p-[10px] border rounded-lg group-hover:bg-blue-dark group-hover:text-white transition-all duration-300 ease-in-out"
             >
               View Detail

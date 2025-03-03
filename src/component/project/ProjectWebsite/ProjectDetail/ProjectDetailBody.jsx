@@ -1,27 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import { Lightbox } from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css"; // Pastikan stylesheet Lightbox diimport
 import { getDataProject } from "../../../../utils/DataProject";
 import ProjectDetailHero from "./ProjectDetailHero";
 
 function ProjectDetailBody() {
   const { id } = useParams(); // Mengambil id dari URL
-  const project = getDataProject().find((proj) => proj.id === parseInt(id)); // Mencari proyek berdasarkan ID
+  const project = getDataProject().find((proj) => proj.title); // Mencari proyek berdasarkan ID
 
   if (!project) {
-    return (
-      <h2 className="text-center mt-10 text-red-500">Project not found</h2>
-    );
+    return <div className="text-center text-red-500">Project not found!</div>;
   }
+
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="project-detail-body">
-      <ProjectDetailHero />
-
-      <div className="mt-32 md:mt-32 mx-[32px] xl:mx-[120px] custome_margin">
+      <ProjectDetailHero project={project}/>
+      <div className="mt-32 md:mt-32 mx-[32px] xl:mx-[120px] mb-32 custome_margin">
         <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark">
           {project.title}
         </h2>
-        <p className="text-center">{project.description}</p>
+        <hr className="h-2 bg-blue-divider rounded w-[64px] mb-[32px] mx-auto" />
+        <p className="text-center mb-6">{project.description}</p>
 
         {/* Video Preview */}
         {project.video && (
@@ -43,6 +46,10 @@ function ProjectDetailBody() {
               <div
                 key={index}
                 className="cursor-pointer overflow-hidden rounded-lg min-w-[500px] h-60 snap-center"
+                onClick={() => {
+                  setPhotoIndex(index);
+                  setIsOpen(true);
+                }}
               >
                 <img
                   src={image}
@@ -53,6 +60,19 @@ function ProjectDetailBody() {
             ))}
           </div>
         </div>
+
+        {/* Lightbox */}
+        {isOpen && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            index={photoIndex}
+            slides={(Array.isArray(project.image)
+              ? project.image
+              : [project.image]
+            ).map((img) => ({ src: img }))}
+          />
+        )}
       </div>
     </div>
   );

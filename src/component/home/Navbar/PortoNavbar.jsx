@@ -51,7 +51,7 @@ function PortoNavbar() {
         <a href="/" className="font-bold text-blue-dark">
           Suekko
         </a>
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-6 font-semibold">
           {["about", "experience", "project", "gallery", "findme"].map(
             (section) => (
               <li key={section}>

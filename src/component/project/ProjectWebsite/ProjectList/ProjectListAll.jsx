@@ -7,7 +7,7 @@ function ProjectListAll() {
   });
   return (
     <div className="project-list">
-      <div className="mx-[32px] xl:mx-[120px] pt-32">
+      <div className="mx-[32px] xl:mx-[120px] pt-32 mb-32">
         <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark">
           Website
         </h2>

@@ -13,24 +13,31 @@ import ProjectListAll from "./project/ProjectWebsite/ProjectList/ProjectListAll"
 class PortoApp extends React.Component {
   render() {
     return (
-      <Router> {/* Pastikan Router membungkus semuanya */}
+      <Router>
+        {" "}
+        {/* Pastikan Router membungkus semuanya */}
         <PortoNavbar /> {/* Navbar tetap tampil di semua halaman */}
-
         <Routes>
-          <Route path="/" element={
-            <>
-              <HeroSection />
-              <ExperienceList />
-              <ProjectList />
-              <GalleryList />
-              <FindMeSection />
-              <FooterSection />
-              <ProjectDetailSection />
-            </>
-          } />
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <ExperienceList />
+                <ProjectList />
+                <GalleryList />
+                <FindMeSection />
+              </>
+            }
+          />
 
           <Route path="/website-list" element={<ProjectListAll />} />
+          <Route
+            path="/website-list/:title"
+            element={<ProjectDetailSection />}
+          />
         </Routes>
+        <FooterSection />
       </Router>
     );
   }
