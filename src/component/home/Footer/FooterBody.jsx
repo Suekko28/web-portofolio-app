@@ -4,9 +4,9 @@ import { getContentSocialMedia } from "../../../utils/DataHome";
 function FooterBody() {
   const linkNavbar = [
     { name: "About Me", id: "about" },
-    { name: "Experiences", id: "experiences" },
+    { name: "Experience", id: "experience" },
     { name: "Project", id: "project" },
-    { name: "Gallery", id: "contact" },
+    { name: "Gallery", id: "gallery" },
     { name: "Find Me", id: "findme" },
   ];
 

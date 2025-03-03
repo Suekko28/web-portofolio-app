@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Lightbox } from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css"; // Pastikan stylesheet Lightbox diimport
+import "yet-another-react-lightbox/styles.css";
 import { getDataProject } from "../../../../utils/DataProject";
 import ProjectDetailHero from "./ProjectDetailHero";
 
 function ProjectDetailBody() {
-  const { id } = useParams(); // Mengambil id dari URL
-  const project = getDataProject().find((proj) => proj.title); // Mencari proyek berdasarkan ID
+  const { title } = useParams(); // Mengambil title dari URL
+  const project = getDataProject().find((proj) => proj.title === title); // Mencari proyek berdasarkan ID
 
   if (!project) {
     return <div className="text-center text-red-500">Project not found!</div>;
@@ -18,10 +18,10 @@ function ProjectDetailBody() {
 
   return (
     <div className="project-detail-body">
-      <ProjectDetailHero project={project}/>
+      <ProjectDetailHero project={project} />
       <div className="mt-32 md:mt-32 mx-[32px] xl:mx-[120px] mb-32 custome_margin">
         <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark">
-          {project.title}
+          Intorduce
         </h2>
         <hr className="h-2 bg-blue-divider rounded w-[64px] mb-[32px] mx-auto" />
         <p className="text-center mb-6">{project.description}</p>
@@ -37,8 +37,8 @@ function ProjectDetailBody() {
         )}
 
         {/* Gallery */}
-        <div className="gallery overflow-x-auto scrollbar-hide">
-          <div className="grid grid-flow-col grid-rows-2 gap-4 snap-x snap-mandatory">
+        <div className="gallery">
+          <div className="grid grid-flow-col grid-rows-2 gap-4 snap-x snap-mandatory overflow-x-auto scrollbar-hide p-6 bg-blue-light rounded-3xl">
             {(Array.isArray(project.image)
               ? project.image
               : [project.image]

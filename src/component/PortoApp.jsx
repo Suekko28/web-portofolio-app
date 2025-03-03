@@ -32,10 +32,7 @@ class PortoApp extends React.Component {
           />
 
           <Route path="/website-list" element={<ProjectListAll />} />
-          <Route
-            path="/website-list/:title"
-            element={<ProjectDetailSection />}
-          />
+          <Route path="/website-list/:title" element={<ProjectDetailSection />} />
         </Routes>
         <FooterSection />
       </Router>

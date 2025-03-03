@@ -91,7 +91,7 @@ const getDataProject = () => [
       "/src/assets/images/murgana-5.png",
       "/src/assets/images/murgana-6.png",
     ],
-    title: "Website Warehouse Murgana  ",
+    title: "Website Warehouse Murgana",
     date: "Aug 2023 - Nov 2023",
     description:
       "Murgana Warehouse is used to manage and track equipment needs for partner companies, ensuring efficient inventory and smooth collaboration based on their specific needs.",

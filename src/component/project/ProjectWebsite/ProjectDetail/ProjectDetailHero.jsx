@@ -29,6 +29,7 @@ function ProjectDetailHero({ project }) {
         <h1 className="title text-center font-bold text-blue-dark mt-[12px] text-[32px]">
           {project.title}
         </h1>
+        <h6 className="text-center text-xs">{project.date}</h6>
       </div>
     </div>
   );
