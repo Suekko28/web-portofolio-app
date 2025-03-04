@@ -88,3 +88,11 @@ hr {
  }
 }
 
+
+/* Project List Website */
+@media only screen and (max-width: 640px) {
+  .custome_margin {
+    margin-bottom: 32px;
+  }
+}
+

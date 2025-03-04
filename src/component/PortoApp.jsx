@@ -8,7 +8,8 @@ import HeroSection from "./home/Hero/HeroSection";
 import PortoNavbar from "./home/Navbar/PortoNavbar";
 import ProjectList from "./home/Project/ProjectList";
 import ProjectDetailSection from "./project/ProjectWebsite/ProjectDetail/ProjectDetailSection";
-import ProjectListAll from "./project/ProjectWebsite/ProjectList/ProjectListAll";
+import ProjectListUIUX from "./project/ProjectUIUX/ProjectList/ProjectListUIUX";
+import ProjectListWebsite from "./project/ProjectWebsite/ProjectList/ProjectListWebsite";
 
 class PortoApp extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class PortoApp extends React.Component {
               <>
                 <HeroSection />
                 <ExperienceList />
+                <ProjectListUIUX />
                 <ProjectList />
                 <GalleryList />
                 <FindMeSection />
@@ -31,8 +33,8 @@ class PortoApp extends React.Component {
             }
           />
 
-          <Route path="/website-list" element={<ProjectListAll />} />
-          <Route path="/website-list/:title" element={<ProjectDetailSection />} />
+          <Route path="/website-list" element={<ProjectListWebsite />} />
+          <Route path="/website-list/:slug" element={<ProjectDetailSection />} />
         </Routes>
         <FooterSection />
       </Router>

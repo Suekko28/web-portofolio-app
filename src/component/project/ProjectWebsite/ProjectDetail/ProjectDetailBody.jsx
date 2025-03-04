@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Lightbox } from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { getDataProject } from "../../../../utils/DataProject";
+import { getDataWebsite } from "../../../../utils/DataProject";
 import ProjectDetailHero from "./ProjectDetailHero";
 
 function ProjectDetailBody() {
-  const { title } = useParams(); // Mengambil title dari URL
-  const project = getDataProject().find((proj) => proj.title === title); // Mencari proyek berdasarkan ID
+  const { slug } = useParams(); // Mengambil title dari URL
+  const project = getDataWebsite().find((proj) => proj.slug === slug); // Mencari proyek berdasarkan ID
 
   if (!project) {
     return <div className="text-center text-red-500">Project not found!</div>;

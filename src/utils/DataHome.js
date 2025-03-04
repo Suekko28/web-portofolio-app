@@ -56,19 +56,19 @@ const getContentProject = () => [
 const getContentSocialMedia = () => [
   {
     img: "/src/assets/images/logo-linkedin.png",
-    name : "Linkedin",
+    name: "Linkedin",
     color: " --color-blue-linkedin",
     url: "https://www.linkedin.com/in/aldi-dharmawan-4b76a9221/",
   },
   {
     img: "/src/assets/images/logo-github.png",
-    name : "Github",
+    name: "Github",
     color: "--color-black-github",
     url: "https://github.com/Suekko28",
   },
   {
     img: "/src/assets/images/logo-instagram.png",
-    name : "Instagram",
+    name: "Instagram",
     color: "--color-purple-instagram",
     url: "https://www.instagram.com/dhrmwnaldi_/",
   },

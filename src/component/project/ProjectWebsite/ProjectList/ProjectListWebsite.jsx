@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ProjectListItem from "./ProjectListItem";
 
-function ProjectListAll() {
+function ProjectListWebsite() {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -21,4 +21,4 @@ function ProjectListAll() {
   );
 }
 
-export default ProjectListAll;
+export default ProjectListWebsite;
