@@ -15,12 +15,15 @@ function HeroBody() {
               Aldi Dharmawan
             </h1>
             <div className="space-y-3">
-              <p className="font-light">Tech Enthusiast</p>
+              <p className="font-light">Junior Web Developer</p>
               <hr className="w-full xl:w-1/2 h-1 bg-blue-divider rounded" />
               <p className="font-light">
-                Informatics Engineering graduate from Gunadarma University with
-                a background in Computer and Network Engineering. Skilled in Web
-                Development, IT Support, and UI/UX design
+                Experienced Web Developer specializing in Laravel, MySQL, and
+                React.js. Skilled in building dynamic and responsive web
+                applications, managing complex databases, and optimizing
+                performance. Passionate about problem-solving, client-driven
+                development, and implementing modern technologies to create
+                high-quality digital solutions.
               </p>
               <HeroButton />
             </div>
@@ -28,7 +31,7 @@ function HeroBody() {
         </div>
         <div className="profile w-full">
           <img
-            src="/src/assets/images/profile-svg.svg"
+            src="/src/assets/images/profile.png"
             alt="Profile"
             className="mx-auto mt-12 lg:mx-0 lg:ml-auto lg:mt-0 relative top-[-20px]"
           />

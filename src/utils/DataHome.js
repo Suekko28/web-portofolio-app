@@ -61,6 +61,12 @@ const getContentSocialMedia = () => [
     url: "https://www.linkedin.com/in/aldi-dharmawan-4b76a9221/",
   },
   {
+    img: "/src/assets/images/logo-instagram.png",
+    name: "Instagram",
+    color: "--color-purple-instagram",
+    url: "https://www.instagram.com/dhrmwnaldi_/",
+  },
+  {
     img: "/src/assets/images/logo-github.png",
     name: "Github",
     color: "--color-black-github",
@@ -68,7 +74,7 @@ const getContentSocialMedia = () => [
   },
   {
     img: "/src/assets/images/logo-instagram.png",
-    name: "Instagram",
+    name: "Opensea",
     color: "--color-purple-instagram",
     url: "https://www.instagram.com/dhrmwnaldi_/",
   },

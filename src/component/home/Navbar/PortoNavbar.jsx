@@ -6,7 +6,7 @@ function PortoNavbar() {
   const location = useLocation();
 
   useEffect(() => {
-    const sections = ["about", "experience", "project", "gallery", "findme"];
+    const sections = ["about", "experience", "project", "findme"];
 
     const handleScroll = () => {
       let currentSection = "";
@@ -52,7 +52,7 @@ function PortoNavbar() {
           Suekko
         </a>
         <ul className="flex space-x-6 font-semibold">
-          {["about", "experience", "project", "gallery", "findme"].map(
+          {["about", "experience", "project", "findme"].map(
             (section) => (
               <li key={section}>
                 <button

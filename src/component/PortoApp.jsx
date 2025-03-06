@@ -27,7 +27,7 @@ class PortoApp extends React.Component {
                 <ExperienceList />
                 <ProjectListUIUX />
                 <ProjectList />
-                <GalleryList />
+                {/* <GalleryList /> */}
                 <FindMeSection />
               </>
             }
