@@ -26,12 +26,12 @@ function ProjectListBody({ image, title, date, description, slug }) {
                 {title}
               </h1>
               <h1 className="date text-xs font-light">{date}</h1>
-              <p className="text-sm font-normal md:h-[190px] sm:h-32 custome_margin ">
+              <p className="text-sm font-normal md:mb-[190px] sm:mb-32 custome_margin ">
                 {description}
               </p>
               <Link
                 to={`/website-list/${slug}`}
-                className="text-base p-[10px] border rounded-lg group-hover:bg-blue-dark group-hover:text-white transition-all duration-300 ease-in-out "
+                className="text-base p-[10px] border border-blue-dark text-blue-dark rounded-lg group-hover:bg-blue-dark group-hover:text-white transition-all duration-300 ease-in-out "
               >
                 View Detail
               </Link>

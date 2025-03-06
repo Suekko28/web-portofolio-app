@@ -22,10 +22,10 @@ function FooterBody() {
   return (
     <div className="footer space-y-[64px]">
       <div className="flex flex-wrap gap-16 items-center w-full">
-        {getContentSocialMedia().map((link, index) => (
+        {getContentSocialMedia().map((link) => (
           <a
             href={link.url}
-            key={index}
+            key={link.id}
             target="_blank"
             rel="noopener noreferrer"
             className="sm:w-full md:w-auto custome_link"
