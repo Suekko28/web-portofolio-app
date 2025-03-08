@@ -55,28 +55,29 @@ const getContentProject = () => [
 
 const getContentSocialMedia = () => [
   {
-    img: "/src/assets/images/logo-linkedin.png",
+    id: 1,
+    img_footer: "/src/assets/images/linkedin.png",
     name: "Linkedin",
-    color: " --color-blue-linkedin",
     url: "https://www.linkedin.com/in/aldi-dharmawan-4b76a9221/",
   },
   {
-    img: "/src/assets/images/logo-instagram.png",
+    id: 2,
+    img_footer: "/src/assets/images/instagram.png",
     name: "Instagram",
-    color: "--color-purple-instagram",
     url: "https://www.instagram.com/dhrmwnaldi_/",
   },
   {
+    id: 3,
     img: "/src/assets/images/logo-github.png",
+    img_footer: "/src/assets/images/github (2).png",
     name: "Github",
-    color: "--color-black-github",
     url: "https://github.com/Suekko28",
   },
   {
-    img: "/src/assets/images/logo-instagram.png",
+    id: 4,
+    img_footer: "/src/assets/images/opensea.svg",
     name: "Opensea",
-    color: "--color-purple-instagram",
-    url: "https://www.instagram.com/dhrmwnaldi_/",
+    url: "https://opensea.io/HandSome_Cats",
   },
 ];
 

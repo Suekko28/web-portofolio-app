@@ -2,48 +2,42 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Mengambil nama image dari DataHome
-const getImageName = (imageURL) =>
-  imageURL
-    .split("/")
-    .pop()
-    .replace(/\.[^/.]+$/, "");
+// const getImageName = (image) =>
+//   image
+//     .split("/")
+//     .pop()
+//     .replace(/\.[^/.]+$/, "");
 
-// Membuat parameter props berdasarkan DataHome
-function ProjectBody({ imageURL, title, description, bgColor }) {
+// Membuat parameter props berdasarkan DataProject
+function ProjectBody({ image, title, date, description, slug }) {
   return (
     <div className="project-body w-full">
-      <Link to="/website-list">
-        <a href="#">
-          <div
-            className={`card h-auto mb-6 lg:mb-0 rounded-3xl p-4 text-white transition duration-300 ease-in-out transform hover:scale-109 hover:shadow-blue-card/50
-          ${
-            bgColor === "--color-orange-card"
-              ? "hover:shadow-lg hover:shadow-orange-card/50"
-              : bgColor === "--color-blue-card"
-              ? "hover:shadow-lg hover:shadow-blue-card/50"
-              : "hover:shadow-lg hover:shadow-red-card/50"
-          }`}
-            style={{ backgroundColor: `var(${bgColor})` }}
-          >
-            <div className="flex justify-between space-x-3 p-[16px]">
-              <div className="image w-[65px] h-[150px]">
-                <img
-                  src={imageURL}
-                  alt={`Foto ${getImageName(imageURL)}`}
-                  className="w-[45px] h-[45px] object-cover rounded-xs"
-                />
-              </div>
-              <div className="content w-full">
-                <h1 className="title font-2xl text-white font-bold">{title}</h1>
-                <p className="description text-sm font-light text-white">
-                  {description}
-                </p>
-              </div>
-            </div>
+        <div className="project-image w-full flex justify-center">
+          <img
+            src={image}
+            alt=""
+            className="w-full object-cover rounded-lg"
+          />
+        </div>
+
+        <div className="content-project w-full flex flex-col flex-grow mt-[16px]">
+          <h1 className="title font-bold text-blue-dark text-xl min-h-[32px]">
+            {title}
+          </h1>
+          <h1 className="date text-xs font-light mb-3 ">{date}</h1>
+
+          <p className="text-sm font-normal mb-6 line-clamp-3">{description}</p>
+
+          <div className="mt-auto">
+            <Link
+              to={`/website-list/${slug}`}
+              className="text-base p-[10px] border border-blue-dark text-blue-dark rounded-lg group-hover:bg-blue-dark group-hover:text-white transition-all duration-300 ease-in-out"
+            >
+              View Detail
+            </Link>
           </div>
-        </a>
-      </Link>
-    </div>
+        </div>
+      </div>
   );
 }
 

@@ -130,6 +130,5 @@ const getDataWebsite = () => {
   }));
 };
 
-const getDataUIUX = () => [{}];
 
 export { getDataWebsite };

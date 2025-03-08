@@ -6,7 +6,7 @@ function ProjectList() {
     <div className="project-list" id="project">
       <div className="mt-32 md:mt-32 mx-[32px] xl:mx-[120px] custome_margin">
         <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark">
-          Project
+          Futured Work
         </h2>
         <hr className="h-2 bg-blue-divider rounded w-[64px] mb-[32px] mx-auto" />
         <ProjectItem />

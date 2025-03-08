@@ -4,8 +4,8 @@ import { getContentSocialMedia } from "../../../utils/DataHome";
 function FooterBody() {
   return (
     <div className="footer space-y-[32px] text-center">
-      <h6 className="text-white font-semibold">Follow Us</h6>
-      <div className="flex flex-wrap gap-16 items-center justify-center w-full">
+      <h6 className="text-white text-md font-semibold">Follow Us</h6>
+      <div className="flex flex-wrap gap-8 items-center justify-center w-full">
         {getContentSocialMedia().map((link) => (
           <a
             href={link.url}
@@ -14,11 +14,18 @@ function FooterBody() {
             rel="noopener noreferrer"
             className="sm:w-full md:w-auto custome_link"
           >
-            <img src={link.img} alt={`Logo ${link.name}`} />
+            <img
+              src={link.img_footer}
+              alt={`Logo ${link.name}`}
+              width="32"
+              height="32"
+            />
           </a>
         ))}
       </div>
-      <div className="copyright text-white font-base">&#169; 2025 Suekko</div>
+      <div className="copyright text-white text-md font-base">
+        &copy; 2025 Suekko. All Rights Reserved.
+      </div>
     </div>
   );
 }
