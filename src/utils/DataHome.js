@@ -9,7 +9,7 @@ const getContentExperience = () => [
   },
   {
     id: 2,
-    imageURL: "/src/assets/images/dicoding.png",
+    imageURL: "/src/assets/images/dicoding.jpeg",
     title: "Dicoding Indonesia",
     date: "Study Independet \u25CF Feb 2023 - Jun 2023",
     description:

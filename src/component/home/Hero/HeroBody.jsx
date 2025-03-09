@@ -17,7 +17,7 @@ function HeroBody() {
             <div className="space-y-3">
               <p className="font-light text-gray-600">Junior Web Developer</p>
               <hr className="w-full xl:w-1/2 h-1 bg-blue-divider rounded" />
-              <p className="font-light text-gray-600">
+              <p className="font-light text-gray-600 text-justify">
                 Experienced Web Developer specializing in Laravel, MySQL, and
                 React.js. Skilled in building dynamic and responsive web
                 applications, managing complex databases, and optimizing

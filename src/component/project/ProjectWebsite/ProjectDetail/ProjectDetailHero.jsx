@@ -1,4 +1,5 @@
 import React from "react";
+import { Globe } from "lucide-react";
 
 function ProjectDetailHero({ project }) {
   return (
@@ -12,7 +13,13 @@ function ProjectDetailHero({ project }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/src/assets/images/github.png" alt="GitHub" />
+                <img
+                  src="/src/assets/images/github (2).png"
+                  alt="GitHub"
+                  width="32px"
+                  height="32px"
+                  className="transition ease-in-out hover:scale-120"
+                />
               </a>
             )}
             {project.link_website && (
@@ -21,7 +28,12 @@ function ProjectDetailHero({ project }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/src/assets/images/web.png" alt="Website" />
+                <Globe
+                  alt="Website"
+                  className="transition ease-in-out hover:scale-120"
+                  width={32}
+                  height={32}
+                />
               </a>
             )}
           </div>

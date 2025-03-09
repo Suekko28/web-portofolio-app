@@ -19,11 +19,12 @@ function FooterBody() {
               alt={`Logo ${link.name}`}
               width="32"
               height="32"
+              className="transition ease-in-out hover:scale-120"
             />
           </a>
         ))}
       </div>
-      <div className="copyright text-white text-md font-base">
+      <div className="copyright text-white text-sm font-base">
         &copy; 2025 Suekko. All Rights Reserved.
       </div>
     </div>

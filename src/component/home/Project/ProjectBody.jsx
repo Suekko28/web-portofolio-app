@@ -26,12 +26,12 @@ function ProjectBody({ image, title, date, description, slug }) {
           </h1>
           <h1 className="date text-xs font-light mb-3 ">{date}</h1>
 
-          <p className="text-sm font-normal mb-6 line-clamp-3">{description}</p>
+          <p className="text-sm font-normal mb-6 line-clamp-3 text-justify">{description}</p>
 
           <div className="mt-auto">
             <Link
-              to={`/website-list/${slug}`}
-              className="text-base p-[10px] border border-blue-dark text-blue-dark rounded-lg group-hover:bg-blue-dark group-hover:text-white transition-all duration-300 ease-in-out"
+              to={`/${slug}`}
+              className="text-base p-[10px] border border-blue-dark text-blue-dark rounded-lg hover:bg-blue-dark hover:text-white transition-all duration-300 ease-in-out"
             >
               View Detail
             </Link>

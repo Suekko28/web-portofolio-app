@@ -29,7 +29,7 @@ function PortoNavbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, []); 
 
   const scrollToSection = (id) => {
     if (location.pathname !== "/") {
