@@ -10,7 +10,7 @@ function ExperienceBody({ title, date, description }) {
         {title}
       </h1>
       <h6 className="date font-light text-xs">{date}</h6>
-      <p className="description text-gray-600 text-sm text-justify leading-relaxed">{description}</p>
+      <p className="description text-gray-900 text-sm text-justify leading-6">{description}</p>
     </div>
   );
 }

@@ -7,7 +7,7 @@ function ProjectDetailSection() {
   });
   
   return (
-    <div className="project-detail-section">
+    <div className="project-detail-section mb-32">
       <ProjectDetailBody />
     </div>
   );

@@ -63,8 +63,23 @@ hr {
   }
 }
 
-/* Find Me Section  */
+/* Experience Section */
 
+@media only screen and (max-width: 640px) {
+   .custome_margin_experience_list {
+    margin-top: 164px;
+   }
+}
+
+/* Featured Works */
+
+@media only screen and (max-width:640px){
+  
+  
+}
+
+/* Find Me Section  */
+/* 
 @media only screen and (max-width: 640px) {
   .button {
     width: 250px;
@@ -79,14 +94,14 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
   }
-}
+} */
 
-
+/* 
 @media only screen and (max-width: 640px) {
  .custome_link {
   width: 100%;
  }
-}
+} */
 
 
 /* Project List Website */

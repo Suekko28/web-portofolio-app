@@ -9,7 +9,7 @@ function FindMeBody() {
           <h2 className="text-4xl font-bold text-[#0077B5]">
             Check Out My Repos!
           </h2>
-          <p className="text-gray-600 mt-3">
+          <p className="text-gray-900 mt-3">
             Browse through my projects and contributions on GitHub.
           </p>
         </div>

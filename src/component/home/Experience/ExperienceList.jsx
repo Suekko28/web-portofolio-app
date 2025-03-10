@@ -4,7 +4,7 @@ import ExperienceItem from "./ExperienceItem";
 function ExperienceList() {
   return (
     <div className="experience-list" id="experience">
-      <div className="mt-32 md:mt-64 mx-[32px] xl:mx-[120px] overflow-hidden">
+      <div className="mt-64 md:mt-64 mx-[32px] xl:mx-[120px] custome_margin_experience_list">
         <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark">
           Experience
         </h2>

@@ -10,7 +10,7 @@ function ProjectItem() {
       {getDataWebsite()
       .filter((contentProject) => contentProject.id <= 3)
       .map((contentProject) => (
-        <ProjectBody key={contentProject.id} {...contentProject} image={contentProject.image[0]}/>
+        <ProjectBody key={contentProject.id} {...contentProject}/>
       ))}
     </div>
     </div>
