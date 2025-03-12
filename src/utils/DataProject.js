@@ -78,12 +78,30 @@ const getDataWebsite = () => {
         },
       ],
       tools: [
-        "/src/assets/images/logo-html.png",
-        "/src/assets/images/logo-css.png",
-        "/src/assets/images/logo-bootstrap.png",
-        "/src/assets/images/logo-sql.png",
-        "/src/assets/images/logo-laravel.png",
-        "/src/assets/images/logo-js.png",
+        {
+          name: "HTML",
+          image: "/src/assets/images/logo-html.png",
+        },
+        {
+          name: "CSS",
+          image: "/src/assets/images/logo-css.png",
+        },
+        {
+          name: "Bootstrap",
+          image: "/src/assets/images/logo-bootstrap.png",
+        },
+        {
+          name: "MySQL",
+          image: "/src/assets/images/logo-sql.png",
+        },
+        {
+          name: "Laravel",
+          image: "/src/assets/images/logo-laravel.png",
+        },
+        {
+          name: "JavaScript",
+          image: "/src/assets/images/logo-js.png",
+        },
       ],
     },
 
@@ -162,9 +180,18 @@ const getDataWebsite = () => {
         },
       ],
       tools: [
-        "/src/assets/images/logo-wordpress.png",
-        "/src/assets/images/logo-polylang.jpg",
-        "/src/assets/images/logo-wpforms.png",
+        {
+          name: "Wordpress",
+          image: "/src/assets/images/logo-wordpress.png",
+        },
+        {
+          name: "Polylang",
+          image: "/src/assets/images/logo-polylang.jpg",
+        },
+        {
+          name: "WPForms",
+          image: "/src/assets/images/logo-wpforms.png",
+        },
       ],
     },
     {

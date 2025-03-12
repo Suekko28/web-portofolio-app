@@ -29,13 +29,13 @@ function ProjectBody({ image, title, date, description, slug }) {
         <p className="text-sm font-normal mb-6 line-clamp-3 text-justify leading-6 text-gray-900">
           {description}
         </p>
-
-        <div className="mt-auto">
+        <div className="flex justify-center">
           <Link
             to={`/${slug}`}
-            className="text-base p-[10px] border border-blue-dark text-blue-dark rounded-lg hover:bg-blue-dark hover:text-white transition-all duration-300 ease-in-out "
+            className="flex items-center justify-center gap-2 text-base p-[10px] border border-blue-dark text-blue-dark rounded-lg hover:bg-blue-dark hover:text-white transition-all duration-300 ease-in-out w-full"
           >
             View Detail
+            <i class="fa-solid fa-arrow-right"></i>
           </Link>
         </div>
       </div>

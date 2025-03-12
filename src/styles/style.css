@@ -71,43 +71,23 @@ hr {
    }
 }
 
-/* Featured Works */
-
-@media only screen and (max-width:640px){
-  
-  
-}
-
-/* Find Me Section  */
-/* 
-@media only screen and (max-width: 640px) {
-  .button {
-    width: 250px;
-  }
-
-  .image_find_ {
-    width: 50%;
-    height: auto;
-  }
-
-  .custome_body {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-} */
-
-/* 
-@media only screen and (max-width: 640px) {
- .custome_link {
-  width: 100%;
- }
-} */
-
-
 /* Project List Website */
 @media only screen and (max-width: 640px) {
   .custome_margin {
     margin-bottom: 32px;
   }
 }
+
+/* Project Detail Website */
+
+@media only screen and (max-width:490px){
+  .custome_blur {
+    height: 100%;
+  }
+  
+}
+
+
+
+
 

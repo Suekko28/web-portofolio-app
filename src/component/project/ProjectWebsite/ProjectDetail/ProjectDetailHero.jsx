@@ -12,13 +12,14 @@ function ProjectDetailHero({ project }) {
                 href={project.link_github}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transition duration-300 ease-in-out hover:scale-110"
               >
                 <img
                   src="/src/assets/images/github (2).png"
                   alt="GitHub"
                   width="32px"
                   height="32px"
-                  className="transition ease-in-out hover:scale-120"
+                  className="drop-shadow-md hover:drop-shadow-xl transition-all duration-300"
                 />
               </a>
             )}
@@ -27,10 +28,11 @@ function ProjectDetailHero({ project }) {
                 href={project.link_website}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transition duration-300 ease-in-out hover:scale-110"
               >
                 <Globe
                   alt="Website"
-                  className="transition ease-in-out hover:scale-120"
+                  className="drop-shadow-md hover:drop-shadow-xl transition-all duration-300"
                   width={32}
                   height={32}
                 />

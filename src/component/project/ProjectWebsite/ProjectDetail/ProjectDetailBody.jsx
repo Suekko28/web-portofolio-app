@@ -87,24 +87,39 @@ function ProjectDetailBody() {
           )}
 
           {/* Tools Section */}
-          <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark">
+          <h2 className="text-2xl font-bold text-center mb-[16px] text-blue-dark mt-32">
             Built With Cutting-Edge Technology
           </h2>
-          <hr className="h-2 bg-blue-divider rounded w-[64px] mb-[32px] mx-auto" />
-          <p className="text-center text-gray-700 mb-6">
+          <hr className="h-2 bg-blue-divider rounded w-[64px] mb-[16px] mx-auto" />
+          <p className="text-center text-gray-900 mb-[32px]">
             These are the tools and technologies we used to bring this project
             to life.
           </p>
-          <div className="tools flex flex-wrap gap-6 justify-center">
-            {project.tools?.length > 0 &&
-              project.tools.map((tool, index) => (
-                <img
-                  key={index}
-                  src={tool}
-                  alt={`Tool ${index + 1}`}
-                  className="h-8 w-auto"
-                />
-              ))}
+          <div className="tools flex flex-wrap gap-6 justify-center relative">
+            <div className="h-42 w-full absolute bg-gradient-to-r from-cyan-500 to-blue-500 blur-3xl -z-10"></div>
+
+            {Array.isArray(project.tools) && project.tools.length > 0 && (
+              <>
+                {project.tools.map((tool, index) => (
+                  <div
+                    key={index}
+                    className="group relative p-3 bg-white/20 border border-transparent rounded-full min-w-[200px] flex items-center justify-center gap-3 backdrop-blur-lg transition-all duration-300 hover:scale-105 hover:bg-white/30 hover:border-cyan-400 shadow-lg"
+                  >
+                    <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-r from-cyan-400 to-blue-400 blur-xl -z-10"></div>
+                    <img
+                      src={tool.image}
+                      alt={`Tool ${index + 1}`}
+                      className="h-8 w-auto transition-transform duration-300 group-hover:scale-110"
+                    />
+
+                    {/* Nama Tool */}
+                    <span className="font-medium text-white group-hover:text-cyan-100 transition-colors duration-300">
+                      {tool.name}
+                    </span>
+                  </div>
+                ))}
+              </>
+            )}
           </div>
         </section>
       </div>

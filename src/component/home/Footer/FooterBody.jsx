@@ -12,18 +12,20 @@ function FooterBody() {
             key={link.id}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit custome_link"
+            className="w-fit transition duration-300 ease-in-out hover:scale-110 custome_link"
+            
           >
             <img
               src={link.img_footer}
               alt={`Logo ${link.name}`}
               width="32"
               height="32"
-              className="transition ease-in-out hover:scale-120"
+              className="drop-shadow-md hover:drop-shadow-xl transition-all duration-300"
             />
           </a>
         ))}
       </div>
+      <div className="w-3/4 mx-auto border-t border-white/20"></div>{" "}
       <div className="copyright text-white text-sm font-base">
         &copy; 2025 Suekko. All Rights Reserved.
       </div>
