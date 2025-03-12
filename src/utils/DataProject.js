@@ -14,7 +14,7 @@ const getDataWebsite = () => {
       video: "/src/assets/video/jejakkebahagiaan-preview.mp4",
       module: [
         {
-          title: "Login",
+          title: "Login & Register",
           description:
             "The authentication module with Laravel UI provides Blade-based login and register features with frontend support such as Bootstrap, Vue, and React. Users can register with email and password validation, and then directly enter the system after registration. Login using Laravel Authentication Guard with “Remember Me” and logout options. Laravel also supports email verification before login. Implementation is easy with the commands composer require laravel/ui, php artisan ui bootstrap --auth, and npm install && npm run dev, which automatically generate authentication views. This module offers a quick and secure solution without the need to build a system from scratch.",
           image: [
@@ -101,6 +101,10 @@ const getDataWebsite = () => {
         {
           name: "JavaScript",
           image: "/src/assets/images/logo-js.png",
+        },
+        {
+          name: "Vite",
+          image: "/src/assets/images/logo-vite.png",
         },
       ],
     },
@@ -206,6 +210,15 @@ const getDataWebsite = () => {
       video: "/src/assets/video/sawitri-preview.mp4",
       module: [
         {
+          title: "Login & Register",
+          description:
+            "The authentication module with Laravel UI provides Blade-based login and register features with frontend support such as Bootstrap, Vue, and React. Users can register with email and password validation, and then directly enter the system after registration. Login using Laravel Authentication Guard with “Remember Me” and logout options. Laravel also supports email verification before login. Implementation is easy with the commands composer require laravel/ui, php artisan ui bootstrap --auth, and npm install && npm run dev, which automatically generate authentication views. This module offers a quick and secure solution without the need to build a system from scratch.",
+          image: [
+            "/src/assets/images/sawitri-13.png",
+            "/src/assets/images/sawitri-12.png",
+          ],
+        },
+        {
           title: "Dashboard",
           description:
             "The Dashboard module in the population administration system of Tarikolot Village is designed to provide a visual and real-time overview of village population data. The dashboard displays population statistics such as the total population, the number by gender, and information on E-KTP ownership in the form of a pie chart. In addition, population circulation data is available which includes the number of deaths, births, and moves in and out. Marital status is also displayed in pie charts, including the categories of Unmarried, Married, Divorced, and Divorced. Information on nationality and religion is also presented to provide a more complete picture of village demographics.",
@@ -246,16 +259,60 @@ const getDataWebsite = () => {
             "/src/assets/images/sawitri-21.png",
             "/src/assets/images/sawitri-5.png",
             "/src/assets/images/sawitri-22.png",
+            "/src/assets/images/sawitri-6.png",
+            "/src/assets/images/sawitri-23.png",
+          ],
+        },
+        {
+          title: "Activity Accountability Report",
+          description:
+            "The Village Circulation Data module is a feature that records various population events within a village, including birth, death, newcomer, and migration data. This module is integrated with the Resident Data table, ensuring that any changes that occur can be directly linked to the information of the individual concerned. With the CRUD (Create, Read, Update, Delete) feature, village administrators can easily manage real-time population circulation data, monitor demographic changes, and generate accurate reports for village administration purposes.",
+          image: [
+            "/src/assets/images/sawitri-7.png",
+            "/src/assets/images/sawitri-24.png",
+            "/src/assets/images/sawitri-8.png",
+            "/src/assets/images/sawitri-25.png",
+            "/src/assets/images/sawitri-26.png",
+            "/src/assets/images/sawitri-27.png",
+            "/src/assets/images/sawitri-28.png",
           ],
         },
       ],
       tools: [
-        "/src/assets/images/logo-wordpress.png",
-        "/src/assets/images/logo-polylang.jpg",
-        "/src/assets/images/logo-wpforms.png",
+        {
+          name: "HTML",
+          image: "/src/assets/images/logo-html.png",
+        },
+        {
+          name: "CSS",
+          image: "/src/assets/images/logo-css.png",
+        },
+        {
+          name: "Bootstrap",
+          image: "/src/assets/images/logo-bootstrap.png",
+        },
+        {
+          name: "MySQL",
+          image: "/src/assets/images/logo-sql.png",
+        },
+        {
+          name: "Laravel",
+          image: "/src/assets/images/logo-laravel.png",
+        },
+        {
+          name: "JavaScript",
+          image: "/src/assets/images/logo-js.png",
+        },
+        {
+          name: "Vite",
+          image: "/src/assets/images/logo-vite.png",
+        },
+        {
+          name: "Yajra Box",
+          image: "/src/assets/images/logo-yajra.svg",
+        },
       ],
     },
-
     {
       id: 4,
       image: [
