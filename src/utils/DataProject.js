@@ -200,7 +200,7 @@ const getDataWebsite = () => {
       title: "Tarikolot Village Administration System Website",
       date: "Jun 2024 - Aug 2024",
       description:
-        "The Tarikolot Village Administration System website is an integrated platform that manages important village data. The system tracks village circulation activities to keep residents informed and engaged and has a reporting module to document activities.",
+        "Tarikolot Village is committed to developing a more integrated civil registration system to improve efficiency and transparency in village data management. The system is designed to include a population data collection process that is directly linked to village circulation data, including the recording of deceased residents and residents who have moved. In addition, the system will be equipped with an Activity Accountability Report (LPJ) feature as an official document that summarizes the implementation of activities from start to finish. With website-based technology, administrative processes can be carried out in real-time, transparently, and integrated, thus supporting the progress and development of the village as a whole.",
       link_website: "",
       link_github: "https://github.com/Suekko28/web-desa-app",
       video: "/src/assets/video/sawitri-preview.mp4",
@@ -208,63 +208,44 @@ const getDataWebsite = () => {
         {
           title: "Dashboard",
           description:
-            "The main page of PT Menthobi Hijau Lestari's website presents a comprehensive overview of the company's commitment to creating sustainable solutions in the palm oil industry. With a professional and user-friendly design, this page introduces the company's vision in managing natural resources responsibly, as well as showcasing the various products and services offered, such as organic fertilizers and biofuels. In addition, visitors can find up-to-date information through articles and news related to the company's sustainability practices and innovations. Through intuitive navigation, the main page also directs users to various important modules, including company information, partnership opportunities, and contacts for further communication.",
+            "The Dashboard module in the population administration system of Tarikolot Village is designed to provide a visual and real-time overview of village population data. The dashboard displays population statistics such as the total population, the number by gender, and information on E-KTP ownership in the form of a pie chart. In addition, population circulation data is available which includes the number of deaths, births, and moves in and out. Marital status is also displayed in pie charts, including the categories of Unmarried, Married, Divorced, and Divorced. Information on nationality and religion is also presented to provide a more complete picture of village demographics.",
           image: [
-            "/src/assets/images/mhl-1.png",
-            "/src/assets/images/mhl-2.png",
-            "/src/assets/images/mhl-3.png",
-            "/src/assets/images/mhl-11.png",
-            "/src/assets/images/mhl-12.png",
+            "/src/assets/images/sawitri-1.png",
+            "/src/assets/images/sawitri-14.png",
+            "/src/assets/images/sawitri-15.png",
+            "/src/assets/images/sawitri-16.png",
           ],
         },
         {
-          title: "About Us",
+          title: "Government Institution Data",
           description:
-            "The “About Us” module on PT Menthobi Hijau Lestari's website provides an in-depth overview of the company's identity and commitment to the sustainable palm oil industry. In this module, the company explains its vision and mission that focuses on the responsible management of natural resources and the application of environmentally friendly technologies. It also highlights the company's core values that reflect a dedication to sustainability, efficiency and innovation. With information on its history, achievements, and environmental and social commitments, the “About Us” module aims to build trust with business partners, customers, and the wider public who want to understand more about the company's role in the green industry.",
+            "The Village Government Institution Data module is designed to manage information about village official profiles in a structured and integrated manner. This module allows users to add, edit, delete, and view village official data through responsive and easy-to-use CRUD (Create, Read, Update, Delete) features. Each official's profile includes important information such as name, position, duty period, and other relevant supporting data. In addition, the view data feature allows users to see the complete details of each official, ensuring transparency and easy access to village government information. With this organized system, village administration can more efficiently manage institutional data and ensure information is always updated as needed.",
           image: [
-            "/src/assets/images/mhl-4.png",
-            "/src/assets/images/mhl-5.png",
-            "/src/assets/images/mhl-13.png",
-            "/src/assets/images/mhl-14.png",
+            "/src/assets/images/sawitri-11.png",
+            "/src/assets/images/sawitri-17.png",
+            "/src/assets/images/sawitri-18.png",
           ],
         },
         {
-          title: "Product & Services",
+          title: "Population Data",
           description:
-            "The “Product & Services” module on the PT Menthobi Hijau Lestari website showcases the various products and services the company offers in support of the sustainable palm oil industry. The module includes information on key products such as organic fertilizers and biofuels, which are developed with environmentally friendly technologies to increase efficiency and reduce negative impacts on the ecosystem. In addition, the company also provides consulting services in palm oil industry waste management, assisting business partners in implementing more sustainable practices. With clear details on the benefits and advantages of each product and service, the module aims to provide innovative solutions for industries looking to transition to greener and more responsible practices.",
+            "The Population Data module in Sawitri Apps is designed to manage village population information in a structured and efficient manner. This module is equipped with search and filter features based on education, occupation, BPJS ownership, e-KTP ownership, gender, marital status, religion, as well as age, RW, and RT to facilitate access to data as needed. In addition, there is a CRUD (Create, Read, Update, Delete) feature that allows users to add, edit, and delete population data easily. Additional features such as data export to CSV or Excel and data import options are also available to facilitate the processing of large amounts of information. With an intuitive interface and clear navigation, this module supports more accurate and transparent population data management for village governments.",
           image: [
-            "/src/assets/images/mhl-6.png",
-            "/src/assets/images/mhl-7.png",
-            "/src/assets/images/mhl-15.png",
-            "/src/assets/images/mhl-16.png",
-            "/src/assets/images/mhl-17.png",
+            "/src/assets/images/sawitri-19.png",
+            "/src/assets/images/sawitri-2.png",
           ],
         },
         {
-          title: "Articles",
+          title: "Village Circulation Data",
           description:
-            "The “Articles” module on PT Menthobi Hijau Lestari's website serves as an information center that presents various writings, news, and updates related to the palm oil industry and sustainability practices. In this module, visitors can find articles that discuss the latest innovations, environmentally friendly technologies, and industrial waste management strategies to support a greener ecosystem. In addition, the articles also provide insights into the company's efforts in creating sustainable solutions and its contribution to a more responsible industry. With informative and relevant content, this module aims to educate and inspire industry players, business partners, and the general public interested in the development of a sustainable palm oil sector.",
+            "The Village Circulation Data module in Sawitri Apps serves to manage and monitor population dynamics in the village through recording data on births, deaths, newcomers, and residents who move. This module is integrated with the Resident Data table, ensuring that any changes in the village population are recorded accurately and up-to-date. With CRUD (Create, Read, Update, Delete) features, users can easily add, update, and delete population circulation data as events occur. The relationship with Resident Data allows for automatic updates of individual statuses in the village database, such as the addition of new residents from births, deletion of deceased residents, and recording residents who arrive or move. In addition, this module is equipped with search, filter, and statistical report features to assist village officials in making data-driven decisions related to village demographic development.",
           image: [
-            "/src/assets/images/mhl-8.png",
-            "/src/assets/images/mhl-18.png",
-          ],
-        },
-        {
-          title: "Be a Partner",
-          description:
-            "The “Be a Partner” module on the PT Menthobi Hijau Lestari website is designed to invite various parties, ranging from industry players, investors, to communities, to collaborate in creating a sustainable and environmentally friendly business. In this module, the company explains the partnership opportunities available, both in the field of palm oil industry waste treatment, distribution of environmentally friendly products, and green technology innovation. In addition, the module highlights the benefits of strategic partnerships, such as increased operational efficiency, positive environmental impact, and contribution to building a more responsible palm oil industry. With an open approach to cooperation, PT Menthobi Hijau Lestari hopes to establish long-term relationships with partners who share the same vision in realizing a greener future. By using wpforms plugin for its form feature",
-          image: [
-            "/src/assets/images/mhl-9.png",
-            "/src/assets/images/mhl-19.png",
-          ],
-        },
-        {
-          title: "Contact Us",
-          description:
-            "The “Contact Us” module on the PT Menthobi Hijau Lestari website provides a means of communication for visitors who wish to establish a further relationship with the company.In this module, there is contact information that includes the head office address, phone number, and official email for various purposes, such as business inquiries, partnerships, or consultations regarding products and services.In addition, there is a contact form that allows users to send direct messages to the company's team easily and quickly.With this module, PT Menthobi Hijau Lestari is committed to providing prompt and professional responses, and building closer relationships with business partners, customers, and communities interested in the sustainability solutions offered. By using wpforms plugin for its form feature",
-          image: [
-            "/src/assets/images/mhl-20.png",
-            "/src/assets/images/mhl-21.png",
+            "/src/assets/images/sawitri-3.png",
+            "/src/assets/images/sawitri-20.png",
+            "/src/assets/images/sawitri-4.png",
+            "/src/assets/images/sawitri-21.png",
+            "/src/assets/images/sawitri-5.png",
+            "/src/assets/images/sawitri-22.png",
           ],
         },
       ],
