@@ -35,7 +35,7 @@ function ProjectBody({ image, title, date, description, slug }) {
             className="flex items-center justify-center gap-2 text-base p-[10px] border border-blue-dark text-blue-dark rounded-lg hover:bg-blue-dark hover:text-white transition-all duration-300 ease-in-out w-full"
           >
             View Detail
-            <i class="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right"></i>
           </Link>
         </div>
       </div>

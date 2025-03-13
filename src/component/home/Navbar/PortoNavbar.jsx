@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BriefcaseBusiness, FileBadge2, Github, User } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
 function PortoNavbar() {
@@ -6,7 +7,7 @@ function PortoNavbar() {
   const location = useLocation();
 
   useEffect(() => {
-    const sections = ["about", "experience", "works", "My Repos"];
+    const sections = ["about", "experiences", "works", "My Repos"];
 
     const handleScroll = () => {
       let currentSection = "";
@@ -29,7 +30,7 @@ function PortoNavbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); 
+  }, []);
 
   const scrollToSection = (id) => {
     if (location.pathname !== "/") {
@@ -46,32 +47,69 @@ function PortoNavbar() {
   };
 
   return (
-    <nav className="bg-blue-light border-gray-200 fixed w-full z-50">
-      <div className="max-w-screen md:mx-[120px] mx-[32px] h-[92px] flex items-center justify-between">
-        <a href="/" className="font-bold text-blue-dark">
-          Suekko
-        </a>
-        <ul className="flex space-x-6 font-semibold">
-          {["about", "experience", "works", "My Repos"].map(
-            (section) => (
+    <div className="navbar">
+      <nav className="bg-blue-light border-gray-200 fixed w-full z-50 hidden md:block">
+        <div className="max-w-screen md:mx-[120px] mx-[32px] h-[92px] flex items-center justify-between">
+          <a href="/" className="font-bold text-blue-dark">
+            Suekko
+          </a>
+          <ul className="flex space-x-6 font-semibold">
+            {["about", "experiences", "works", "My Repos"].map((section) => (
               <li key={section}>
                 <button
                   onClick={() => scrollToSection(section)}
                   className={`px-3 py-2 rounded-sm ${
-                    activeSection === section
-                      ? "text-blue-dark font-bold"
-                      : ""
+                    activeSection === section ? "text-blue-dark font-bold" : ""
                   } hover:text-blue-dark`}
                 >
                   {section.charAt(0).toUpperCase() +
                     section.slice(1).replace("-", " ")}
                 </button>
               </li>
-            )
-          )}
-        </ul>
+            ))}
+          </ul>
+        </div>
+        {/* Navbar Mobile */}
+      </nav>
+      <div className="md:hidden w-full fixed bottom-0 inset-x-0 bg-white shadow-lg border-t border-gray-300 p-3 flex justify-around items-center text-gray-600 font-medium z-1">
+        <button
+          onClick={() => scrollToSection("about")}
+          className={`flex flex-col items-center ${
+            activeSection === "about" ? "text-blue-dark" : ""
+          }`}
+        >
+          <User className="mx-auto" width={28} height={28} />
+          <span className="text-xs">About</span>
+        </button>
+        <button
+          onClick={() => scrollToSection("experiences")}
+          className={`flex flex-col items-center ${
+            activeSection === "experiences" ? "text-blue-dark" : ""
+          }`}
+        >
+          <BriefcaseBusiness className="mx-auto" width={28} height={28} />
+          <span className="text-xs">Experiences</span>
+        </button>
+        <button
+          onClick={() => scrollToSection("works")}
+          className={`flex flex-col items-center ${
+            activeSection === "works" ? "text-blue-dark" : ""
+          }`}
+        >
+          <FileBadge2 className="mx-auto" width={28} height={28} />
+          <span className="text-xs">Works</span>
+        </button>
+        <button
+          onClick={() => scrollToSection("My Repos")}
+          className={`flex flex-col items-center ${
+            activeSection === "My Repos" ? "text-blue-dark" : ""
+          }`}
+        >
+          <Github className="mx-auto" width={28} height={28} />
+          <span className="text-xs">My Repos</span>
+        </button>
       </div>
-    </nav>
+    </div>
   );
 }
 
