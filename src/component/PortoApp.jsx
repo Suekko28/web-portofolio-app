@@ -5,6 +5,7 @@ import FindMeSection from "./home/FindMe/FindMeSection";
 import FooterSection from "./home/Footer/FooterSection";
 import HeroSection from "./home/Hero/HeroSection";
 import PortoNavbar from "./home/Navbar/PortoNavbar";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import ProjectList from "./home/Project/ProjectList";
 import ProjectDetailSection from "./project/ProjectWebsite/ProjectDetail/ProjectDetailSection";
 
@@ -15,7 +16,7 @@ function PortoApp() {
     // Simulasi loading selama 2 detik
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1500);
   }, []);
 
   return (
@@ -23,8 +24,11 @@ function PortoApp() {
       {isLoading ? (
         <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
           <div className="flex flex-col items-center">
-            <div className="animate-spin rounded-full h-16 w-16 border-4 border-blue-500 border-t-transparent"></div>
-            <p className="mt-4 text-blue-500 text-lg">Loading...</p>
+            <DotLottieReact
+              src="https://lottie.host/f41f48ad-c920-4cbf-b5ac-01033ac8fcf7/yJEmJ1vMXX.lottie"
+              loop
+              autoplay
+            />{" "}
           </div>
         </div>
       ) : (

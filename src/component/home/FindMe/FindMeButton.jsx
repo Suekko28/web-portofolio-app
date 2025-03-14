@@ -4,6 +4,7 @@ import { getContentSocialMedia } from "../../../utils/DataHome";
 function FindMeButton() {
   return (
     <div className="md:w-1/2 flex justify-center mt-5 md:mt-0">
+      {/* Mengambil data dari DataHome.js */}
       {getContentSocialMedia()
         .filter((item) => item.name === "Github")
         .map((item) => (

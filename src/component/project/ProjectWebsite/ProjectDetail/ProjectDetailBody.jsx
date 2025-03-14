@@ -43,7 +43,7 @@ function ProjectDetailBody() {
           {project.video && (
             <div className="video mb-32">
               <video controls className="w-full mx-auto rounded-3xl">
-                <source src={project.video} type="video/mp4" />
+                <source src={project.video} type="video/mp4"/>
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -67,7 +67,7 @@ function ProjectDetailBody() {
 
                   {/* Menampilkan gambar jika ada */}
                   {Array.isArray(mod.image) && mod.image.length > 0 && (
-                    <div className="overflow-x-auto md:h-auto sm:h-92">
+                    <div className="overflow-x-auto md:h-auto h-92">
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 p-6 bg-blue-light rounded-3xl">
                         {mod.image.map((img, imgIndex) => (
                           <img
@@ -96,7 +96,7 @@ function ProjectDetailBody() {
             to life.
           </p>
           <div className="tools flex flex-wrap gap-6 justify-center relative">
-            <div className="h-42 w-full absolute bg-gradient-to-r from-cyan-500 to-blue-500 blur-3xl -z-10"></div>
+            <div className="h-full w-full absolute bg-gradient-to-r from-cyan-500 to-blue-500 blur-3xl -z-10"></div>
 
             {Array.isArray(project.tools) && project.tools.length > 0 && (
               <>

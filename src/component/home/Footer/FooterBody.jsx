@@ -6,6 +6,7 @@ function FooterBody() {
     <div className="footer space-y-[32px] text-center">
       <h6 className="text-white text-md font-semibold">Find Me</h6>
       <div className="flex flex-nowrap gap-8 items-center justify-center w-full">
+        {/* Mengambil data dari DataHome.js */}
         {getContentSocialMedia().map((link) => (
           <a
             href={link.url}
@@ -13,7 +14,6 @@ function FooterBody() {
             target="_blank"
             rel="noopener noreferrer"
             className="w-fit transition duration-300 ease-in-out hover:scale-110 custome_link"
-            
           >
             <img
               src={link.img_footer}
