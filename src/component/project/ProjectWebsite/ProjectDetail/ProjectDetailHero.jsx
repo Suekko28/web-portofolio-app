@@ -15,7 +15,7 @@ function ProjectDetailHero({ project }) {
                 className="transition duration-300 ease-in-out hover:scale-110"
               >
                 <img
-                  src="/assets/images/github (2).png"
+                  src="/src/assets/images/github (2).png"
                   alt="GitHub"
                   width="32px"
                   height="32px"

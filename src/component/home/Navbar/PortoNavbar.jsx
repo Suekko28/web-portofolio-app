@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 function PortoNavbar() {
   const [activeSection, setActiveSection] = useState("");
   const location = useLocation();
-  const sections = ["about", "experiences", "works", "My-Repos"];
+  const sections = ["about", "experiences", "works", "my-repos"];
 
   useEffect(() => {
     const handleScroll = () => {
