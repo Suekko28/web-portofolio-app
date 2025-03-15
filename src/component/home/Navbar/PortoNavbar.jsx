@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { BriefcaseBusiness, FileBadge2, Github, User } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
 function PortoNavbar() {
   const [activeSection, setActiveSection] = useState("");
   const location = useLocation();
+  const sections = ["about", "experiences", "works", "my-repos"];
 
   useEffect(() => {
-    const sections = ["about", "experiences", "works", "My Repos"];
-
     const handleScroll = () => {
       let currentSection = "";
       for (let section of sections) {
@@ -25,26 +24,23 @@ function PortoNavbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Panggil saat pertama kali
+    handleScroll();
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id) => {
+  const scrollToSection = useCallback((id) => {
     if (location.pathname !== "/") {
-      window.location.href = `/#${id}`; // Redirect ke home lalu scroll
+      window.location.href = `/#${id}`;
     } else {
       const element = document.getElementById(id);
       if (element) {
         const yOffset = -120;
-        const y =
-          element.getBoundingClientRect().top + window.scrollY + yOffset;
+        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
         window.scrollTo({ top: y, behavior: "smooth" });
       }
     }
-  };
+  }, [location.pathname]);
 
   return (
     <div className="navbar">
@@ -54,7 +50,7 @@ function PortoNavbar() {
             Suekko
           </a>
           <ul className="flex space-x-6 font-semibold">
-            {["about", "experiences", "works", "My Repos"].map((section) => (
+            {sections.map((section) => (
               <li key={section}>
                 <button
                   onClick={() => scrollToSection(section)}
@@ -62,16 +58,17 @@ function PortoNavbar() {
                     activeSection === section ? "text-blue-dark font-bold" : ""
                   } hover:text-blue-dark`}
                 >
-                  {section.charAt(0).toUpperCase() +
-                    section.slice(1).replace("-", " ")}
+                  {section.replace("-", " ").charAt(0).toUpperCase() +
+                    section.replace("-", " ").slice(1)}
                 </button>
               </li>
             ))}
           </ul>
         </div>
-        {/* Navbar Mobile */}
       </nav>
-      <div className="md:hidden w-full fixed bottom-0 inset-x-0 bg-white shadow-lg border-t border-gray-300 p-3 flex justify-around items-center text-gray-600 font-medium z-1">
+
+      {/* Navbar Mobile */}
+      <div className="md:hidden w-full fixed bottom-0 inset-x-0 bg-white shadow-lg border-t border-gray-300 p-3 flex justify-around items-center text-gray-500 font-medium z-10">
         <button
           onClick={() => scrollToSection("about")}
           className={`flex flex-col items-center ${
@@ -100,9 +97,9 @@ function PortoNavbar() {
           <span className="text-xs">Works</span>
         </button>
         <button
-          onClick={() => scrollToSection("My Repos")}
+          onClick={() => scrollToSection("my-repos")}
           className={`flex flex-col items-center ${
-            activeSection === "My Repos" ? "text-blue-dark" : ""
+            activeSection === "my-repos" ? "text-blue-dark" : ""
           }`}
         >
           <Github className="mx-auto" width={28} height={28} />
