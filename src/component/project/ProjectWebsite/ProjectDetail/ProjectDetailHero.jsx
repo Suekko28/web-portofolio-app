@@ -4,7 +4,7 @@ import { Globe } from "lucide-react";
 function ProjectDetailHero({ project }) {
   return (
     <div className="project-hero">
-      <div className="py-32 bg-blue-light">
+      <div className="py-32 bg-blue-default">
         <div className="w-full h-auto px-[120px]">
           <div className="flex justify-center gap-[16px]">
             {project.link_github && (

@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 function PortoNavbar() {
   const [activeSection, setActiveSection] = useState("");
   const location = useLocation();
-  const sections = ["about", "experiences", "works", "my-repos"];
+  const sections = ["about", "experiences", "works", "My-Repos"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +44,7 @@ function PortoNavbar() {
 
   return (
     <div className="navbar">
-      <nav className="bg-blue-light border-gray-200 fixed w-full z-50 hidden md:block">
+      <nav className="bg-blue-default border-gray-200 fixed w-full z-50 hidden md:block">
         <div className="max-w-screen md:mx-[120px] mx-[32px] h-[92px] flex items-center justify-between">
           <a href="/" className="font-bold text-blue-dark">
             Suekko
@@ -97,9 +97,9 @@ function PortoNavbar() {
           <span className="text-xs">Works</span>
         </button>
         <button
-          onClick={() => scrollToSection("my-repos")}
+          onClick={() => scrollToSection("My-Repos")}
           className={`flex flex-col items-center ${
-            activeSection === "my-repos" ? "text-blue-dark" : ""
+            activeSection === "My-Repos" ? "text-blue-dark" : ""
           }`}
         >
           <Github className="mx-auto" width={28} height={28} />

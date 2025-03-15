@@ -68,7 +68,7 @@ function ProjectDetailBody() {
                   {/* Menampilkan gambar jika ada */}
                   {Array.isArray(mod.image) && mod.image.length > 0 && (
                     <div className="overflow-x-auto md:h-auto h-92">
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 p-6 bg-blue-light rounded-3xl">
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 p-6 bg-blue-default rounded-3xl">
                         {mod.image.map((img, imgIndex) => (
                           <img
                             key={imgIndex}

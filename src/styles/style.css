@@ -2,7 +2,7 @@
 @import "tailwindcss";
 :root {
   --color-blue-dark: #006fa6;
-  --color-blue-light: #eff9ff;
+  --color-blue-light: #b8e9ff;
   --color-blue-default: #dff3ff;
   --color-blue-divider: #b9e8fe;
   --color-blue-hover: #07314a;
