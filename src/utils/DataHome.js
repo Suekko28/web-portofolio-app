@@ -1,7 +1,7 @@
 const getContentExperience = () => [
   {
     id: 1,
-    imageURL: "/src/assets/images/soedarpo.png",
+    imageURL: "/assets/images/soedarpo.png",
     title: "Seodarpo Informatika",
     date: "UI/UX Designer Intern \u25CF  Nov 2023 - Apr 2024",
     description:
@@ -9,7 +9,7 @@ const getContentExperience = () => [
   },
   {
     id: 2,
-    imageURL: "/src/assets/images/dicoding.jpeg",
+    imageURL: "/assets/images/dicoding.jpeg",
     title: "Dicoding Indonesia",
     date: "Study Independet \u25CF Feb 2023 - Jun 2023",
     description:
@@ -17,7 +17,7 @@ const getContentExperience = () => [
   },
   {
     id: 3,
-    imageURL: "/src/assets/images/lks.png",
+    imageURL: "/assets/images/lks.png",
     title: "Lomba Kompetensi Siswa ",
     date: "IT Network Administration \u25CF Jun 2019 - Sept 2019",
     description:
@@ -28,7 +28,7 @@ const getContentExperience = () => [
 const getContentProject = () => [
   {
     id: 1,
-    imageURL: "/src/assets/images/website-icon.png",
+    imageURL: "/assets/images/website-icon.png",
     title: "Website",
     description:
       "Excited to showcase my latest web development project! Built with precision, functionality, and a seamless user experience in mind.",
@@ -37,7 +37,7 @@ const getContentProject = () => [
 
   {
     id: 2,
-    imageURL: "/src/assets/images/uiux-icon.png",
+    imageURL: "/assets/images/uiux-icon.png",
     title: "UI/UX Designer",
     description:
       "Designing experiences that are not only visually stunning but also user-friendly!  My latest UI/UX project focuses on seamless navigation, intuitive interactions, and modern aesthetics.",
@@ -45,7 +45,7 @@ const getContentProject = () => [
   },
   {
     id: 3,
-    imageURL: "/src/assets/images/nft-icon.jpg",
+    imageURL: "/assets/images/nft-icon.jpg",
     title: "NFT",
     description:
       "A unique collection inspired by my own feline friends. Each piece captures the charm, demeanor, and irresistible charisma of these majestic felines.",
@@ -56,26 +56,26 @@ const getContentProject = () => [
 const getContentSocialMedia = () => [
   {
     id: 1,
-    img_footer: "/src/assets/images/linkedin.png",
+    img_footer: "/assets/images/linkedin.png",
     name: "Linkedin",
     url: "https://www.linkedin.com/in/aldi-dharmawan-4b76a9221/",
   },
   {
     id: 2,
-    img_footer: "/src/assets/images/instagram.png",
+    img_footer: "/assets/images/instagram.png",
     name: "Instagram",
     url: "https://www.instagram.com/dhrmwnaldi_/",
   },
   {
     id: 3,
-    img: "/src/assets/images/logo-github.png",
-    img_footer: "/src/assets/images/github (2).png",
+    img: "/assets/images/logo-github.png",
+    img_footer: "/assets/images/github (2).png",
     name: "Github",
     url: "https://github.com/Suekko28",
   },
   {
     id: 4,
-    img_footer: "/src/assets/images/opensea.svg",
+    img_footer: "/assets/images/opensea.svg",
     name: "Opensea",
     url: "https://opensea.io/HandSome_Cats",
   },

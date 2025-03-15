@@ -2,14 +2,14 @@ import React from "react";
 
 // Daftar gambar logo
 const imageLogos = [
-  "/src/assets/images/logo-html.png",
-  "/src/assets/images/logo-css.png",
-  "/src/assets/images/logo-ps.png",
-  "/src/assets/images/logo-sql.png",
-  "/src/assets/images/logo-figma.png",
-  "/src/assets/images/logo-laravel.png",
-  "/src/assets/images/logo-js.png",
-  "/src/assets/images/logo-react.png",
+  "/assets/images/logo-html.png",
+  "/assets/images/logo-css.png",
+  "/assets/images/logo-ps.png",
+  "/assets/images/logo-sql.png",
+  "/assets/images/logo-figma.png",
+  "/assets/images/logo-laravel.png",
+  "/assets/images/logo-js.png",
+  "/assets/images/logo-react.png",
 ];
 
 //Mengambil data gambar 
