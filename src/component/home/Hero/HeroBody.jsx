@@ -31,7 +31,7 @@ function HeroBody() {
         </div>
         <div className="profile w-full">
           <img
-            src="/src/assets/images/profile.png"
+            src="/assets/images/profile.png"
             alt="Profile"
             className="mx-auto mt-12 lg:mx-0 lg:ml-auto lg:mt-0 relative top-[-20px]"
           />
