@@ -159,28 +159,19 @@ const getDataWebsite = () => {
           title: "Articles",
           description:
             "The “Articles” module on PT Menthobi Hijau Lestari's website serves as an information center that presents various writings, news, and updates related to the palm oil industry and sustainability practices. In this module, visitors can find articles that discuss the latest innovations, environmentally friendly technologies, and industrial waste management strategies to support a greener ecosystem. In addition, the articles also provide insights into the company's efforts in creating sustainable solutions and its contribution to a more responsible industry. With informative and relevant content, this module aims to educate and inspire industry players, business partners, and the general public interested in the development of a sustainable palm oil sector.",
-          image: [
-            "/assets/images/mhl-8.png",
-            "/assets/images/mhl-18.png",
-          ],
+          image: ["/assets/images/mhl-8.png", "/assets/images/mhl-18.png"],
         },
         {
           title: "Be a Partner",
           description:
             "The “Be a Partner” module on the PT Menthobi Hijau Lestari website is designed to invite various parties, ranging from industry players, investors, to communities, to collaborate in creating a sustainable and environmentally friendly business. In this module, the company explains the partnership opportunities available, both in the field of palm oil industry waste treatment, distribution of environmentally friendly products, and green technology innovation. In addition, the module highlights the benefits of strategic partnerships, such as increased operational efficiency, positive environmental impact, and contribution to building a more responsible palm oil industry. With an open approach to cooperation, PT Menthobi Hijau Lestari hopes to establish long-term relationships with partners who share the same vision in realizing a greener future. By using wpforms plugin for its form feature",
-          image: [
-            "/assets/images/mhl-9.png",
-            "/assets/images/mhl-19.png",
-          ],
+          image: ["/assets/images/mhl-9.png", "/assets/images/mhl-19.png"],
         },
         {
           title: "Contact Us",
           description:
             "The “Contact Us” module on the PT Menthobi Hijau Lestari website provides a means of communication for visitors who wish to establish a further relationship with the company.In this module, there is contact information that includes the head office address, phone number, and official email for various purposes, such as business inquiries, partnerships, or consultations regarding products and services.In addition, there is a contact form that allows users to send direct messages to the company's team easily and quickly.With this module, PT Menthobi Hijau Lestari is committed to providing prompt and professional responses, and building closer relationships with business partners, customers, and communities interested in the sustainability solutions offered. By using wpforms plugin for its form feature",
-          image: [
-            "/assets/images/mhl-20.png",
-            "/assets/images/mhl-21.png",
-          ],
+          image: ["/assets/images/mhl-20.png", "/assets/images/mhl-21.png"],
         },
       ],
       tools: [
@@ -249,12 +240,21 @@ const getDataWebsite = () => {
           ],
         },
         {
-          title: "RestAPI Population Data",
+          title: "Restful API Population Data",
           description:
-            "The Population Data module in Sawitri Apps is designed to manage village population information in a structured and efficient manner. This module is equipped with search and filter features based on education, occupation, BPJS ownership, e-KTP ownership, gender, marital status, religion, as well as age, RW, and RT to facilitate access to data as needed. In addition, there is a CRUD (Create, Read, Update, Delete) feature that allows users to add, edit, and delete population data easily. Additional features such as data export to CSV or Excel and data import options are also available to facilitate the processing of large amounts of information. With an intuitive interface and clear navigation, this module supports more accurate and transparent population data management for village governments.",
+            "The Restful API Population Data module in Sawitri Apps serves as the backbone for accessing and managing village population data through secure and structured API endpoints. This module provides endpoints to retrieve, create, update, and delete population records, enabling seamless integration with various front-end systems or third-party applications. It supports filtering and searching based on key demographic attributes such as education level, occupation, BPJS ownership, e-KTP ownership, gender, marital status, religion, age, RW, and RT, ensuring that specific data can be accessed efficiently. Additionally, the API supports bulk data operations, including import and export in JSON or CSV formats, making it ideal for large-scale data processing. With well-documented endpoints and token-based authentication, this module ensures reliable, scalable, and secure access to vital population information for developers and village system integrators.",
           image: [
-            "/assets/images/sawitri-19.png",
-            "/assets/images/sawitri-2.png",
+            "/assets/images/api-1.png",
+            "/assets/images/api-2.png",
+            "/assets/images/api-3.png",
+            "/assets/images/api-4.png",
+            "/assets/images/api-5.png",
+            "/assets/images/api-6.png",
+            "/assets/images/api-7.png",
+            "/assets/images/api-8.png",
+            "/assets/images/api-9.png",
+            "/assets/images/api-10.png",
+            "/assets/images/api-11.png",
           ],
         },
         {
