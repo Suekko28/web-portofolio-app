@@ -249,6 +249,15 @@ const getDataWebsite = () => {
           ],
         },
         {
+          title: "RestAPI Population Data",
+          description:
+            "The Population Data module in Sawitri Apps is designed to manage village population information in a structured and efficient manner. This module is equipped with search and filter features based on education, occupation, BPJS ownership, e-KTP ownership, gender, marital status, religion, as well as age, RW, and RT to facilitate access to data as needed. In addition, there is a CRUD (Create, Read, Update, Delete) feature that allows users to add, edit, and delete population data easily. Additional features such as data export to CSV or Excel and data import options are also available to facilitate the processing of large amounts of information. With an intuitive interface and clear navigation, this module supports more accurate and transparent population data management for village governments.",
+          image: [
+            "/assets/images/sawitri-19.png",
+            "/assets/images/sawitri-2.png",
+          ],
+        },
+        {
           title: "Village Circulation Data",
           description:
             "The Village Circulation Data module in Sawitri Apps serves to manage and monitor population dynamics in the village through recording data on births, deaths, newcomers, and residents who move. This module is integrated with the Resident Data table, ensuring that any changes in the village population are recorded accurately and up-to-date. With CRUD (Create, Read, Update, Delete) features, users can easily add, update, and delete population circulation data as events occur. The relationship with Resident Data allows for automatic updates of individual statuses in the village database, such as the addition of new residents from births, deletion of deceased residents, and recording residents who arrive or move. In addition, this module is equipped with search, filter, and statistical report features to assist village officials in making data-driven decisions related to village demographic development.",
